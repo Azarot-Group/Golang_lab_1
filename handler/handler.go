@@ -9,10 +9,9 @@ type Handler struct {
 func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
 
-	api := router.Group("/api")
+	api := router.Group("/")
 	{
-		api.GET("/time", h.getTime)
-		api.GET("/", h.greet)
+		api.GET("time", h.getTime)
 	}
 
 	return router

@@ -14,9 +14,3 @@ func (h *Handler) getTime(c *gin.Context) {
 		"time": formatTime,
 	})
 }
-
-func (h *Handler) greet(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": "Hello from server",
-	})
-}
