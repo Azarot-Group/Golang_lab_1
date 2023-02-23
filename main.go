@@ -1,8 +1,8 @@
 package main
 
 import (
-	"lab1"
 	"lab1/handler"
+	lab1 "lab1/server"
 	"log"
 )
 
